@@ -4,7 +4,7 @@
   <ion-navbar>
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
-        </button>   
+        </button>
     <ion-title>Query Page</ion-title>
   </ion-navbar>
 
@@ -12,5 +12,13 @@
 
 
 <ion-content padding>
+
+    <ion-list>
+        <button ion-item *ngFor="let vItems of itemlst | async"  >
+               {{vItems.name}} - {{vItems.category}}
+        </button>
+         
+      </ion-list>   
+
 
 </ion-content>

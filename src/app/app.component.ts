@@ -7,7 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { QueryPage } from '../pages/query/query' ;
 
-import { firebaseConfig } from './credentials' ;
+import { FIREBASE_CONFIG } from './credentials' ;
 import firebase from 'firebase';
 
 
@@ -26,7 +26,7 @@ export class MyApp {
               public statusBar: StatusBar, 
               public splashScreen: SplashScreen) {
     this.initializeApp();
-    firebase.initializeApp(firebaseConfig);
+   // firebase.initializeApp(FIREBASE_CONFIG);
     
 
     // used for an example of ngFor and navigation
